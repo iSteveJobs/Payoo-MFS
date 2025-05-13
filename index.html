@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  </head>
+  <body>
+    <main>
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <!-- <div class="text-center lg:text-left">
+                <h1 class="text-5xl font-bold">Login now!</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+              </div> -->
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="label text-black">Mobile Number</label>
+                    <input id="input-number" type="number" class="input" placeholder="Enter your number"/>
+                    <label class="label text-black">4 digit pin</label>
+                    <input id="input-pin" type="pin" class="input" placeholder="Enter 4 digit pin" />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="btn-login" class="btn btn-neutral mt-4 bg-blue-600">Login</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div> 
+    </main>
+
+    <script src="js/login.js"></script>
+
+  </body>
+</html>
