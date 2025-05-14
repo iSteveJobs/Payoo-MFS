@@ -34,17 +34,17 @@
                   Enjoy easy and convenient financial services with us. Cashout
                   charge is low and
                 </p>
-                <button class="btn btn-primary">Add Money</button>
-                <button class="btn btn-primary">Cash Out</button>
-                <button class="btn btn-primary">Help</button>
+                <button id="btn-add-money-features" class="btn btn-primary">Add Money</button>
+                <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                <button id="btn-refresh" class="btn btn-primary">Refresh</button>
               </div>
             </div>
           </div>
           <!-- divider -->
           <div class="divider"></div>
           <!-- add Money form start -->
-          <fieldset
-            class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+          <fieldset id="hidden-addmoney"
+            class="hidden fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
           >
             <legend class="fieldset-legend">Add Money</legend>
 
@@ -57,10 +57,28 @@
             <button id="btn-add-money" class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none">Add Money</button>
           </fieldset>
           <!-- add Money form end -->
+           
+           <!-- Cash Out start -->
+           <fieldset id="hidden-cashout"
+           class="hidden fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+         >
+           <legend class="fieldset-legend">Cash Out</legend>
+
+           <label class="label">Amount</label>
+           <input id="enter-withdraw-money" type="email" class="input" placeholder="Enter amount to withdraw" />
+
+           <label class="label">Pin Number</label>
+           <input id="enter-pin-withdraw" type="password" class="input" placeholder="Enter 4 digit Pin number" />
+
+           <button id="btn-withdraw-money" class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none">Withdraw Money</button>
+         </fieldset>
+            <!-- Cash Out End -->
         </div>
       </div>
     </main>
 
-    <script src="js/home.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
