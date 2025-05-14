@@ -12,9 +12,55 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main>
-       <h1>Hello</h1>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display grid place-content-center bg-white">
+          <!-- available balance -->
+          <div class="stats shadow">
+            <div class="stat">
+              <div id="available-balance" class="stat-value">99000</div>
+              <div class="stat-desc">Available Balance</div>
+            </div>
+          </div>
+          <!-- for divider -->
+          <div class="divider"></div>
+          <!-- user action -->
+          <div class="hero bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">🔥 Welcome to Payooo!</h1>
+                <p class="py-6">
+                  Enjoy easy and convenient financial services with us. Cashout
+                  charge is low and
+                </p>
+                <button class="btn btn-primary">Add Money</button>
+                <button class="btn btn-primary">Cash Out</button>
+                <button class="btn btn-primary">Help</button>
+              </div>
+            </div>
+          </div>
+          <!-- divider -->
+          <div class="divider"></div>
+          <!-- add Money form start -->
+          <fieldset
+            class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+          >
+            <legend class="fieldset-legend">Add Money</legend>
+
+            <label class="label">Amount to Add</label>
+            <input id="enter-add-money" type="email" class="input" placeholder="Add amount to withdraw" />
+
+            <label class="label">Pin Number</label>
+            <input id="enter-pin" type="password" class="input" placeholder="Enter 4 digit Pin number" />
+
+            <button id="btn-add-money" class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none">Add Money</button>
+          </fieldset>
+          <!-- add Money form end -->
+        </div>
+      </div>
     </main>
-    <script src="js/login.js"></script>
+
+    <script src="js/home.js"></script>
   </body>
 </html>
