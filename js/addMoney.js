@@ -1,3 +1,4 @@
+/* older version
 document
   .getElementById("btn-add-money")
   .addEventListener("click", function (event) {
@@ -14,6 +15,28 @@ document
 
       document.getElementById("available-balance").innerText = newBalance;
     } else {
+      alert("Wrong Pin! Failed to Add Money");
+    }
+  });
+
+  */
+
+  document
+  .getElementById("btn-add-money")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const enterAddMoney = getInput('enter-add-money')
+    const enterPin = getInput('enter-pin')
+    const availableBalance = getText('available-balance')
+
+    if (enterPin === 5555) {
+      const newBalance =
+        availableBalance + enterAddMoney;
+
+      document.getElementById('available-balance').innerText = newBalance;
+    } 
+    else {
       alert("Wrong Pin! Failed to Add Money");
     }
   });

@@ -1,3 +1,4 @@
+/* older version
 document
   .getElementById("btn-withdraw-money")
   .addEventListener("click", function (event) {
@@ -20,3 +21,25 @@ document
       alert("Wrong Pin! Failed Withdraw.");
     }
   });
+
+  */
+  document
+  .getElementById("btn-withdraw-money")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const enterWithdrawMoney = getInput('enter-withdraw-money');
+    const enterPinWithdraw = getInput('enter-pin-withdraw');
+    const availableBalance = getText('available-balance');
+
+    if (enterPinWithdraw === 5555) {
+      const newBalance = availableBalance - enterWithdrawMoney;
+
+      document.getElementById("available-balance").innerText = newBalance;
+    } 
+    else {
+      alert("Wrong Pin! Failed Withdraw.");
+    }
+  });
+
+
