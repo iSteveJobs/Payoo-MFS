@@ -8,8 +8,9 @@ function getText(id){
 
 function showSection(id){
     // hide all the section
-    document.getElementById("hidden-addmoney").classList.add("hidden");
-    document.getElementById("hidden-cashout").classList.add("hidden");
+    document.getElementById('hidden-addmoney').classList.add("hidden");
+    document.getElementById('hidden-cashout').classList.add("hidden");
+    document.getElementById('hidden-transaction').classList.add('hidden');
 
     // only show the section(id)
 

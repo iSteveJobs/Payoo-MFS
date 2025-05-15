@@ -30,11 +30,31 @@ document
     const enterPin = getInput('enter-pin')
     const availableBalance = getText('available-balance')
 
+    // enter amount number or not
+    if(isNaN(enterAddMoney)){
+      alert('Faild ! Not a Number.');
+      return;
+    }
+
     if (enterPin === 5555) {
       const newBalance =
         availableBalance + enterAddMoney;
 
       document.getElementById('available-balance').innerText = newBalance;
+
+      // add to transaction history>>>start
+
+      const p = document.createElement('p');
+
+      p.classList.add('text-green-600');
+
+      p.innerText = `Add Money: ${enterAddMoney} Taka, Available Balance: ${newBalance}`;
+      // ${er vitor je kono variable dile tar value paoa jabe}
+
+      const transactionHistoryContainer = document.getElementById('transaction-history-container');
+
+      transactionHistoryContainer.appendChild(p);
+      // add to transaction history>>>end
     } 
     else {
       alert("Wrong Pin! Failed to Add Money");

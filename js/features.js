@@ -40,26 +40,25 @@ document.getElementById("btn-refresh").addEventListener("click", function () {
 
 */
 
-// Add Money Button
+// Add Money Page Showing
 document
   .getElementById("btn-add-money-features")
   .addEventListener("click", function () {
-
-    showSection('hidden-addmoney');
+    showSection("hidden-addmoney");
   });
 
-// Cash Out Button
+// Cash Out Page Showing
 document
   .getElementById("btn-cash-out")
   .addEventListener("click", function (event) {
-    
-
-    showSection('hidden-cashout');
+    showSection("hidden-cashout");
   });
 
-  // Refresh Button
+// Refresh Page
 document.getElementById("btn-refresh").addEventListener("click", function () {
   document.getElementById("hidden-addmoney").classList.add("hidden");
-  
+
   document.getElementById("hidden-cashout").classList.add("hidden");
+
+  document.getElementById('hidden-transaction').classList.add('hidden');
 });

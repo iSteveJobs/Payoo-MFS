@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo Home Page</title>
+    <title>Paisa Home Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -29,53 +29,107 @@
           <div class="hero bg-base-200">
             <div class="hero-content text-center">
               <div class="max-w-md">
-                <h1 class="text-5xl font-bold">🔥 Welcome to Payooo!</h1>
+                <h1 class="text-5xl font-bold">🔥 Welcome to Paisa!</h1>
                 <p class="py-6">
                   Enjoy easy and convenient financial services with us. Cashout
                   charge is low and
                 </p>
-                <button id="btn-add-money-features" class="btn btn-primary">Add Money</button>
-                <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
-                <button id="btn-transaction" class="btn btn-primary">Transaction</button>
+                <button id="btn-add-money-features" class="btn btn-primary">
+                  Add Money
+                </button>
+                <button id="btn-cash-out" class="btn btn-primary">
+                  Cash Out
+                </button>
+                <button id="btn-transaction" class="btn btn-primary">
+                  Transaction
+                </button>
                 <!-- divider -->
-                 <div class="divider"></div>
-                <button id="btn-refresh" class="btn btn-primary">Refresh</button>
+                <div class="divider"></div>
+                <button id="btn-refresh" class="btn btn-primary">
+                  Refresh
+                </button>
               </div>
             </div>
           </div>
           <!-- divider -->
           <div class="divider"></div>
           <!-- add Money form start -->
-          <fieldset id="hidden-addmoney"
+          <fieldset
+            id="hidden-addmoney"
             class="hidden fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
           >
             <legend class="fieldset-legend">Add Money</legend>
 
             <label class="label">Amount to Add</label>
-            <input id="enter-add-money" type="email" class="input" placeholder="Add amount to withdraw" />
+            <input
+              id="enter-add-money"
+              type="email"
+              class="input"
+              placeholder="Add amount to withdraw"
+            />
 
             <label class="label">Pin Number</label>
-            <input id="enter-pin" type="password" class="input" placeholder="Enter 4 digit Pin number" />
+            <input
+              id="enter-pin"
+              type="password"
+              class="input"
+              placeholder="Enter 4 digit Pin number"
+            />
 
-            <button id="btn-add-money" class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none">Add Money</button>
+            <button
+              id="btn-add-money"
+              class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none"
+            >
+              Add Money
+            </button>
           </fieldset>
           <!-- add Money form end -->
-           
-           <!-- Cash Out start -->
-           <fieldset id="hidden-cashout"
-           class="hidden fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
-         >
-           <legend class="fieldset-legend">Cash Out</legend>
 
-           <label class="label">Amount</label>
-           <input id="enter-withdraw-money" type="email" class="input" placeholder="Enter amount to withdraw" />
+          <!-- Cash Out start -->
+          <fieldset
+            id="hidden-cashout"
+            class="hidden fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+          >
+            <legend class="fieldset-legend">Cash Out</legend>
 
-           <label class="label">Pin Number</label>
-           <input id="enter-pin-withdraw" type="password" class="input" placeholder="Enter 4 digit Pin number" />
+            <label class="label">Amount</label>
+            <input
+              id="enter-withdraw-money"
+              type="email"
+              class="input"
+              placeholder="Enter amount to withdraw"
+            />
 
-           <button id="btn-withdraw-money" class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none">Withdraw Money</button>
-         </fieldset>
-            <!-- Cash Out End -->
+            <label class="label">Pin Number</label>
+            <input
+              id="enter-pin-withdraw"
+              type="password"
+              class="input"
+              placeholder="Enter 4 digit Pin number"
+            />
+
+            <button
+              id="btn-withdraw-money"
+              class="btn btn-neutral mt-4 bg-blue-700 rounded-full border-none"
+            >
+              Withdraw Money
+            </button>
+          </fieldset>
+          <!-- Cash Out End -->
+          <!-- transaction from start -->
+          <div id="hidden-transaction" class="hidden">
+            <h1 class="text-black text-4xl font-bold text-center">
+              Transaction History
+            </h1>
+            <br>
+            <div id="transaction-history-container" class="space-y-3">
+
+
+            </div>
+
+
+          </div>
+          <!-- transaction from end -->
         </div>
       </div>
     </main>
@@ -83,5 +137,6 @@
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/transaction.js"></script>
   </body>
 </html>
